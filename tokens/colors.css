@@ -1,0 +1,13 @@
+/* Generated from tokens/colors.json by tools/build_logo.py. Do not edit. */
+:root {
+  --astra-brand-light-ink: #221F20; /* Stars, the option ring and the wordmark. Lightcone Charcoal. */
+  --astra-brand-light-link: #4E5A70; /* Links between stars and the descriptor line. Lightcone Blue Ink. */
+  --astra-brand-light-gold: #A67C3C; /* The selected option, its path and the result, and nothing else. Lightcone Antique Gold, the colour of the decision record kind in ASTRA UI. */
+  --astra-brand-light-ground: #F8F7F3; /* Preferred light ground. Lightcone Parchment. */
+  --astra-brand-light-rule: #D2CCBF; /* Hairline frames and rules on light grounds. */
+  --astra-brand-dark-ink: #F1EFE9; /* Stars, the option ring and the wordmark. Lightcone Darker Parchment. */
+  --astra-brand-dark-link: #B4BDCD; /* Links between stars and the descriptor line. Blue Ink lifted for dark grounds. */
+  --astra-brand-dark-gold: #C2924A; /* The selected option, its path and the result. Antique Gold lifted for dark grounds. */
+  --astra-brand-dark-ground: #221F20; /* Preferred dark ground. Lightcone Charcoal. */
+  --astra-brand-dark-rule: #4C4747; /* Hairline frames and rules on dark grounds. */
+}

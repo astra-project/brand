@@ -1,0 +1,59 @@
+{
+  "$description": "ASTRA brand colours, in the Design Tokens (DTCG) format. This file is the source: tools/build_logo.py draws the logo with these values and generates tokens/colors.css from them. The values come from the Lightcone Research palette and the dark scheme of its ASTRA adapter.",
+  "light": {
+    "$description": "For light grounds: parchment, white, light photographs.",
+    "ink": {
+      "$type": "color",
+      "$value": "#221F20",
+      "$description": "Stars, the option ring and the wordmark. Lightcone Charcoal."
+    },
+    "link": {
+      "$type": "color",
+      "$value": "#4E5A70",
+      "$description": "Links between stars and the descriptor line. Lightcone Blue Ink."
+    },
+    "gold": {
+      "$type": "color",
+      "$value": "#A67C3C",
+      "$description": "The selected option, its path and the result, and nothing else. Lightcone Antique Gold, the colour of the decision record kind in ASTRA UI."
+    },
+    "ground": {
+      "$type": "color",
+      "$value": "#F8F7F3",
+      "$description": "Preferred light ground. Lightcone Parchment."
+    },
+    "rule": {
+      "$type": "color",
+      "$value": "#D2CCBF",
+      "$description": "Hairline frames and rules on light grounds."
+    }
+  },
+  "dark": {
+    "$description": "For dark grounds: charcoal, near-black, dark photographs.",
+    "ink": {
+      "$type": "color",
+      "$value": "#F1EFE9",
+      "$description": "Stars, the option ring and the wordmark. Lightcone Darker Parchment."
+    },
+    "link": {
+      "$type": "color",
+      "$value": "#B4BDCD",
+      "$description": "Links between stars and the descriptor line. Blue Ink lifted for dark grounds."
+    },
+    "gold": {
+      "$type": "color",
+      "$value": "#C2924A",
+      "$description": "The selected option, its path and the result. Antique Gold lifted for dark grounds."
+    },
+    "ground": {
+      "$type": "color",
+      "$value": "#221F20",
+      "$description": "Preferred dark ground. Lightcone Charcoal."
+    },
+    "rule": {
+      "$type": "color",
+      "$value": "#4C4747",
+      "$description": "Hairline frames and rules on dark grounds."
+    }
+  }
+}

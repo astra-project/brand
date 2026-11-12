@@ -1,0 +1,26 @@
+spec_version: "0.1.0"
+label: The ASTRA mark
+
+inputs:
+  left_star:  { path: data/left.csv }
+  right_star: { path: data/right.csv }
+
+outputs:
+  result:
+    type: metric
+    format: json
+    inputs: [left_star, right_star]
+    decisions: [crossbar]
+    recipe:
+      command: python fit.py --option {decisions.crossbar} --out {output}
+
+decisions:
+  crossbar:
+    label: Crossbar
+    options:
+      left:  { label: Considered }
+      right: { label: Selected }
+
+universes:
+  gold:
+    decisions: { crossbar: right }

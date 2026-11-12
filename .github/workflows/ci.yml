@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.3.3
+
+      - name: Regenerate the SVGs, colour tokens and web guide
+        run: |
+          uv run tools/build_logo.py --svg-only
+          uv run tools/build_site.py
+
+      - name: Fail if generated files are out of date
+        run: git diff --exit-code
+
+      - name: Check the SVGs against the brand rules
+        run: uv run tools/check_assets.py
